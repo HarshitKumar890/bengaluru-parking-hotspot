@@ -1,0 +1,43 @@
+feature,tier,description,group,rationale
+count_lag1,Tier A,Lag-1 cell count,Lag/Count,r=0.93 avg lag1 corr — strongest single feature
+count_lag2,Tier A,Lag-2 cell count,Lag/Count,r=0.91 — confirms momentum
+count_lag3,Tier A,Lag-3 cell count,Lag/Count,r~0.87 — seasonality anchor
+rolling_mean_3m,Tier A,Rolling 3-month mean,Lag/Count,Smoothed; corr 0.96 vs next month
+recurrence_rate,Tier A,Fraction of months active,Recurrence,Directly separates persistent vs sparse cells
+n_active_months,Tier A,Count of active months,Recurrence,Binary persistence; highly stable
+n_months_in_top100,Tier A,Months cell was in top-100,Recurrence,Elite hotspot flag
+rolling_std_3m,Tier A,Std of last 3 months,Volatility,Separates stable from volatile cells
+is_junction_cell,Tier A,Has named junction,Spatial,50.5% cells have junctions; junctions lag1 r=0.94
+cell_lat_center,Tier B,Cell centroid latitude,Spatial,Location prior; needed for spatial borrowing
+cell_lon_center,Tier B,Cell centroid longitude,Spatial,Same
+n_neighboring_cells_active,Tier B,Active neighbors count,Spatial,Spatial autocorrelation proxy
+violation_diversity_lag1,Tier B,Distinct violation types last month,Violation,Complex cells differ from single-type
+pct_main_road_lag1,Tier B,Parking in main road fraction,Violation,Severity signal
+pct_footpath_lag1,Tier B,Footpath parking fraction,Violation,Pedestrian safety proxy
+severity_score_lag1,Tier B,Weighted severity composite,Violation,Captures dangerous co-occurrence
+multi_violation_rate_lag1,Tier B,Records with 2+ violations,Violation,Compound offence density
+station_approval_rate_lag1,Tier B,Station approval rate,Station,Range 21-55%; real variance
+station_unresolved_rate_lag1,Tier B,Station unresolved rate,Station,Range 26-63%; backlog signal
+station_validation_delay_lag1,Tier B,Station validation delay,Station,Range 66h-170h; workflow proxy
+month_sin,Tier B,Cyclic month encoding (sin),Temporal,Jan highest; Apr lowest; seasonal pattern exists
+month_cos,Tier B,Cyclic month encoding (cos),Temporal,Same
+days_in_window,Tier B,Actual days in observation window,Temporal,Critical for April normalization
+pct_commercial_lag1,Tier C,Commercial vehicle fraction,Vehicle,Secondary signal; depends on zone type
+pct_two_wheeler_lag1,Tier C,Two-wheeler fraction,Vehicle,Weak signal; dominant across all cells
+vehicle_type_diversity_lag1,Tier C,Distinct vehicle types,Vehicle,Low variance; maybe useful
+approval_ratio_lag1,Tier C,Cell approval ratio,Validation,42% null validation makes this noisy
+rejection_ratio_lag1,Tier C,Cell rejection ratio,Validation,Same noise issue
+unvalidated_ratio_lag1,Tier C,Cell unvalidated ratio,Validation,"May reflect station behavior, not cell behavior"
+is_weekend_fraction_lag1,Tier C,Weekend fraction,Temporal,Low signal; distribution fairly flat
+peak_hour_fraction_lag1,Tier C,Peak-hour fraction,Temporal,Only 17.5% records in peak; night-heavy pattern dominates
+scita_sent_ratio_lag1,Tier C,SCITA sent ratio,Admin,Admin artifact; not behavioral
+station_encoded,Tier C,Police station label,Station,Station is admin boundary; prefer derived metrics
+center_code,Tier D,Center code,Admin,Admin artifact; no behavioral meaning
+device_id,Tier D,Device ID,Admin,Equipment tracking; not behavioral
+description,Tier D,Description field,Admin,100% null
+action_taken_timestamp,Tier D,Action taken time,Admin,100% null
+closed_datetime,Tier D,Case closed time,Admin,100% null
+response_delay_minutes,Tier D,Response delay,Admin,All null — derived from null timestamp
+closure_delay_minutes,Tier D,Closure delay,Admin,All null
+duplicate_group_id,Tier D,Near-dup group ID,Admin,Post-hoc flag; not predictive
+created_by_id,Tier D,Officer ID,Admin,5 nulls; no behavioral signal without officer-level data

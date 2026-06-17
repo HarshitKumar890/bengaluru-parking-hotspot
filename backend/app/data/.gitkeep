@@ -1,0 +1,3 @@
+# This directory is intentionally empty.
+# The backend reads CSVs from <project_root>/outputs/ by default.
+# You can symlink or copy files here and set OUTPUT_DIR=app/data if preferred.

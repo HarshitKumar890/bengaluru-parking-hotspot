@@ -1,0 +1,2 @@
+# Place lightgbm_model.pkl here.
+# The server will start in read-only mode if this file is absent.

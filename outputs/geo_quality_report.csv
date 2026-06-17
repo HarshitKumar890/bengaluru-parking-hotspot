@@ -1,0 +1,7 @@
+metric,value
+n_valid_geo,298282
+n_geo_anomaly,168
+n_near_zero,0
+n_swapped_suspect,0
+n_out_of_blr,168
+n_missing_coords,0

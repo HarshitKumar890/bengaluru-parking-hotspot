@@ -1,0 +1,45 @@
+raw_value,canonical_value,field
+maxi-cab,MAXI CAB,vehicle_type
+maxi cab,MAXI CAB,vehicle_type
+maxicab,MAXI CAB,vehicle_type
+auto rickshaw,AUTO RICKSHAW,vehicle_type
+auto-rickshaw,AUTO RICKSHAW,vehicle_type
+autorickshaw,AUTO RICKSHAW,vehicle_type
+e-auto,E-AUTO RICKSHAW,vehicle_type
+e-autorickshaw,E-AUTO RICKSHAW,vehicle_type
+light motor vehicle,LMV,vehicle_type
+lmv,LMV,vehicle_type
+heavy motor vehicle,HMV,vehicle_type
+hmv,HMV,vehicle_type
+two wheeler,TWO WHEELER,vehicle_type
+two-wheeler,TWO WHEELER,vehicle_type
+2 wheeler,TWO WHEELER,vehicle_type
+2wheeler,TWO WHEELER,vehicle_type
+motor cycle,TWO WHEELER,vehicle_type
+motorcycle,TWO WHEELER,vehicle_type
+car,CAR,vehicle_type
+private car,CAR,vehicle_type
+suv,CAR,vehicle_type
+taxi,TAXI,vehicle_type
+cab,TAXI,vehicle_type
+bus,BUS,vehicle_type
+mini bus,BUS,vehicle_type
+mini-bus,BUS,vehicle_type
+van,VAN,vehicle_type
+goods vehicle,GOODS VEHICLE,vehicle_type
+goods-vehicle,GOODS VEHICLE,vehicle_type
+lorry,GOODS VEHICLE,vehicle_type
+truck,GOODS VEHICLE,vehicle_type
+three wheeler,THREE WHEELER,vehicle_type
+three-wheeler,THREE WHEELER,vehicle_type
+3 wheeler,THREE WHEELER,vehicle_type
+e-rickshaw,E-RICKSHAW,vehicle_type
+erickshaw,E-RICKSHAW,vehicle_type
+approved,APPROVED,validation_status
+approve,APPROVED,validation_status
+rejected,REJECTED,validation_status
+reject,REJECTED,validation_status
+pending,PENDING,validation_status
+inprogress,PENDING,validation_status
+in progress,PENDING,validation_status
+in_progress,PENDING,validation_status

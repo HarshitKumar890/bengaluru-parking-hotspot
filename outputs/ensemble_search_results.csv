@@ -1,0 +1,13 @@
+ensemble,recall@20,recall@50,spearman,mae_top200,beats_0725
+LightGBM only,0.775,0.77,0.6862,102.2,YES
+EnsC: 40%Roll+40%Rule+20%Sev,0.775,0.8,0.7368,78.8,YES
+EnsH: 50%Roll+30%Lag1+20%Sev,0.775,0.82,0.7387,83.5,YES
+Rolling only,0.725,0.77,0.7371,78.0,no
+EnsG: 70%Roll+30%Rule,0.725,0.78,0.7361,74.0,no
+Rule only,0.725,0.8,0.7357,78.4,YES
+EnsB: 60%Roll+20%Lag1+20%Rule,0.725,0.79,0.7376,75.6,YES
+EnsA: 50%Roll+50%Rule,0.725,0.79,0.7393,74.1,YES
+EnsE: 33%LGBM+33%Roll+33%Rule,0.725,0.77,0.7283,80.1,YES
+Lag1 only,0.7,0.8,0.7198,90.1,no
+EnsD: 40%LGBM+40%Roll+20%Rule,0.7,0.77,0.7251,81.9,no
+EnsF: 50%LGBM+50%Roll,0.7,0.76,0.7233,85.6,no

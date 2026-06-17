@@ -1,0 +1,50 @@
+# ── Raw data (never commit) ──────────────────────────────────────────────────
+jan to may police violation_anonymized791b166.csv
+*.csv.gz
+*.zip
+
+# ── Large intermediate outputs (not needed for serving) ──────────────────────
+outputs/parking_cleaned.csv
+outputs/parking_cleaned.parquet
+outputs/violations_exploded.csv
+outputs/offences_exploded.csv
+outputs/duplicate_analysis.csv
+outputs/hotspot_persistence_table.csv
+outputs/hotspot_priority_scores.csv
+outputs/hotspot_ranking_table.csv
+outputs/recurrence_summary_by_cell.csv
+outputs/hotspot_candidates.csv
+outputs/all_outputs.xlsx
+outputs/all_output_complete.xlsx
+outputs/combined_images.pdf
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+outputs/*.log
+
+# ── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Environment files (use .env.example instead) ─────────────────────────────
+.env
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Kiro internal ─────────────────────────────────────────────────────────────
+.kiro/
+
+# ── Temp audit scripts (not part of the submission) ──────────────────────────
+fix_artifacts.py
+phase_audit.py

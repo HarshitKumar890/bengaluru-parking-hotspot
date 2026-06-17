@@ -1,0 +1,4 @@
+granularity,n_windows,n_cells,n_active_cells,mean_active_per_window,lag1_corr_mean,lag2_corr_mean,rolling_corr_mean,top20_overlap_mean,recurrence_mean,recurrence_p75
+monthly,6,1391,1391,875.7,0.932,0.9067,0.9297,0.73,0.6295,1.0
+biweekly,11,1391,1391,740.0,0.9242,0.897,0.9312,0.715,0.532,0.9091
+weekly,23,1391,1391,561.1,0.8651,0.847,0.8904,0.6386,0.4034,0.7174

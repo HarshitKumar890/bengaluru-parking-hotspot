@@ -1,0 +1,4 @@
+delay_type,column,n_valid,n_negative,mean_min,median_min,p95_min,p99_min,max_min
+Validation Delay,validation_delay_minutes,173028,2,5806.84,1862.51,32945.59,60400.91,219855.88
+SCITA Transmission Delay,scita_delay_minutes,42161,0,28119.88,25705.19,30064.82,117962.43,219332.18
+Record Modification Delay,modification_delay_minutes,298131,314,511.52,15.93,2691.24,9411.15,161183.0
