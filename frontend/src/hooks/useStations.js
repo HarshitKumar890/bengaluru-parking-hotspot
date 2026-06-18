@@ -6,20 +6,22 @@ export default function useStations() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  const fetchStations = async () => {
+    try {
+      setError("");
+
+      const response = await API.get("/stations?limit=10");
+
+      setStations(response.data.data || []);
+    } catch (err) {
+      console.error(err);
+      setError("Failed to load station analytics");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchStations = async () => {
-      try {
-        const response = await API.get("/stations?limit=10");
-
-        setStations(response.data.data || []);
-      } catch (err) {
-        console.error(err);
-        setError("Failed to load station analytics");
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchStations();
   }, []);
 
@@ -27,5 +29,6 @@ export default function useStations() {
     stations,
     loading,
     error,
+    fetchStations,
   };
 }

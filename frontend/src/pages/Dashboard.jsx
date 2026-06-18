@@ -1,22 +1,40 @@
 import KPICard from "../components/common/KPICard";
 import ChartContainer from "../components/common/ChartContainer";
 import StationChart from "../components/charts/StationChart";
-
+import useHealth from "../hooks/useHealth";
 import useSummary from "../hooks/useSummary";
 import useStations from "../hooks/useStations";
 
 export default function Dashboard() {
   const {
-    summary,
-    loading: summaryLoading,
-    error: summaryError,
-  } = useSummary();
+  summary,
+  loading: summaryLoading,
+  error: summaryError,
+  fetchSummary,
+} = useSummary();
 
-  const {
-    stations,
-    loading: stationsLoading,
-    error: stationsError,
-  } = useStations();
+const {
+  stations,
+  loading: stationsLoading,
+  error: stationsError,
+  fetchStations,
+} = useStations();
+
+const {
+  fetchHealth,
+} = useHealth();
+
+const handleRefresh = async () => {
+  try {
+    await Promise.all([
+      fetchSummary(),
+      fetchStations(),
+      fetchHealth(),
+    ]);
+  } catch (error) {
+    console.error(error);
+  }
+};
 
   if (summaryLoading) {
     return (
