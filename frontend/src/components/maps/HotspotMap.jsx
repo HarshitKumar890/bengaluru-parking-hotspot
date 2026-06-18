@@ -9,24 +9,26 @@ import "leaflet/dist/leaflet.css";
 
 import HotspotPopup from "./HotspotPopup";
 
+import { MAP_CONFIG } from "../../utils/mapHelpers.js";
+
 export default function HotspotMap({
   hotspots,
 }) {
   return (
     <MapContainer
       center={[
-        12.9716,
-        77.5946,
+        MAP_CONFIG.center[0],
+        MAP_CONFIG.center[1]
       ]}
-      zoom={11}
+      zoom={MAP_CONFIG.zoom}
       style={{
         height: "700px",
         width: "100%",
       }}
     >
       <TileLayer
-        attribution='&copy; OpenStreetMap'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution={MAP_CONFIG.attribution}
+        url={MAP_CONFIG.tileLayerUrl}
       />
 
       {hotspots.map(
