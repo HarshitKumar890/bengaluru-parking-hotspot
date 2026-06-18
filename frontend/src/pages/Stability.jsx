@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>Stability</div>;
+export default function Stability() {
+  return <div className="text-white">Stability</div>;
 }

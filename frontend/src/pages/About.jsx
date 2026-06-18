@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>About</div>;
+export default function About() {
+  return <div className="text-white">About</div>;
 }

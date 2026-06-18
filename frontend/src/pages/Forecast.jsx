@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>Forecast</div>;
+export default function Forecast() {
+  return <div className="text-white">Forecast</div>;
 }

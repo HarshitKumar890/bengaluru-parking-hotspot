@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>Hotsposts</div>;
+export default function Hotspots() {
+  return <div className="text-white">Hotspots</div>;
 }

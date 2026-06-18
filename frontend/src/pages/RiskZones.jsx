@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>RiskZones</div>;
+export default function RiskZones() {
+  return <div className="text-white">Risk Zones</div>;
 }

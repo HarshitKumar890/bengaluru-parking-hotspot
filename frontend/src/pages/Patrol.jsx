@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>Patrol</div>;
+export default function Patrol() {
+  return <div className="text-white">Patrol Recommendations</div>;
 }

@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>Feature Importance</div>;
+export default function FeatureImportance() {
+  return <div className="text-white">Feature Importance</div>;
 }

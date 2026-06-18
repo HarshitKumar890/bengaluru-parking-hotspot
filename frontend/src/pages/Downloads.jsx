@@ -1,3 +1,3 @@
-export default function Dashboard() {
-  return <div>Downloads</div>;
+export default function Downloads() {
+  return <div className="text-white">Downloads</div>;
 }
