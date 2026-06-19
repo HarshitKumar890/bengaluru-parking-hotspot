@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Zap } from 'lucide-react';
-import { sidebarItems } from '../../constants/sidebarItems';
+import { sidebarItems } from '../../constants/sidebarItems.js';
 
 export default function Sidebar() {
   return (

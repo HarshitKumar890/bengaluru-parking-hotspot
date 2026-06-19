@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../api/axios";
+import API from "../api/axios.js";
 
 export default function useJunctions() {
   const [junctions, setJunctions] = useState([]);

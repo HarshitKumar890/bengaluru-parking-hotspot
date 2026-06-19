@@ -1,19 +1,19 @@
 import { Routes, Route } from "react-router-dom";
 
-import DashboardLayout from "../components/layout/DashboardLayout";
+import DashboardLayout from "../components/layout/DashboardLayout.jsx";
 
 // Pages
-import Dashboard from "../pages/Dashboard";
-import Hotspots from "../pages/Hotspots";
-import Forecast from "../pages/Forecast";
-import Patrol from "../pages/Patrol";
-import RiskZones from "../pages/RiskZones";
-import Stations from "../pages/Stations";
-import Junctions from "../pages/Junctions";
-import Stability from "../pages/Stability";
-import FeatureImportance from "../pages/FeatureImportance";
-import Downloads from "../pages/Downloads";
-import About from "../pages/About";
+import Dashboard from "../pages/Dashboard.jsx";
+import Hotspots from "../pages/Hotspots.jsx";
+import Forecast from "../pages/Forecast.jsx";
+import Patrol from "../pages/Patrol.jsx";
+import RiskZones from "../pages/RiskZones.jsx";
+import Stations from "../pages/Stations.jsx";
+import Junctions from "../pages/Junctions.jsx";
+import Stability from "../pages/Stability.jsx";
+import FeatureImportance from "../pages/FeatureImportance.jsx";
+import Downloads from "../pages/Downloads.jsx";
+import About from "../pages/About.jsx";
 
 const LayoutWrapper = ({ children }) => {
   return (

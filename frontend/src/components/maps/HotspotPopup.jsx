@@ -1,5 +1,5 @@
-import RiskBadge from '../common/RiskBadge';
-import StabilityBadge from '../common/StabilityBadge';
+import RiskBadge from '../common/RiskBadge.jsx';
+import StabilityBadge from '../common/StabilityBadge.jsx';
 
 export default function HotspotPopup({ hotspot }) {
   return (

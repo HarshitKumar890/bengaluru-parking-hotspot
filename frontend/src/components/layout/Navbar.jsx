@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { RefreshCw } from 'lucide-react';
-import { sidebarItems } from '../../constants/sidebarItems';
+import { sidebarItems } from '../../constants/sidebarItems.js';
 
 export default function Navbar() {
   const location = useLocation();

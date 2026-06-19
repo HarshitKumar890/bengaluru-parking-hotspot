@@ -1,9 +1,9 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import FeatureImportanceChart from '../components/charts/FeatureImportanceChart';
-import useFeatureImportance from '../hooks/useFeatureImportance';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import FeatureImportanceChart from '../components/charts/FeatureImportanceChart.jsx';
+import useFeatureImportance from '../hooks/useFeatureImportance.js';
 
 export default function FeatureImportance() {
   const { features, loading, error } = useFeatureImportance();

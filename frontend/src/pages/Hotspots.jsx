@@ -1,8 +1,8 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import HotspotMap from '../components/maps/HotspotMap';
-import useHotspots from '../hooks/useHotspots';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import HotspotMap from '../components/maps/HotspotMap.jsx';
+import useHotspots from '../hooks/useHotspots.js';
 
 export default function Hotspots() {
   const { hotspots, loading, error } = useHotspots();

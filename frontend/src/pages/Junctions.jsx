@@ -1,9 +1,9 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import JunctionChart from '../components/charts/JunctionChart';
-import useJunctions from '../hooks/useJunctions';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import JunctionChart from '../components/charts/JunctionChart.jsx';
+import useJunctions from '../hooks/useJunctions.js';
 
 export default function Junctions() {
   const { junctions, loading, error } = useJunctions();

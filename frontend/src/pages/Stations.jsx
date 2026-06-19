@@ -1,9 +1,9 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import StationChart from '../components/charts/StationChart';
-import useStations from '../hooks/useStations';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import StationChart from '../components/charts/StationChart.jsx';
+import useStations from '../hooks/useStations.js';
 
 export default function Stations() {
   const { stations, loading, error } = useStations();

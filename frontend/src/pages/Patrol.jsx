@@ -1,11 +1,11 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import PatrolChart from '../components/charts/PatrolChart';
-import RiskBadge from '../components/common/RiskBadge';
-import StabilityBadge from '../components/common/StabilityBadge';
-import usePatrol from '../hooks/usePatrol';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import PatrolChart from '../components/charts/PatrolChart.jsx';
+import RiskBadge from '../components/common/RiskBadge.jsx';
+import StabilityBadge from '../components/common/StabilityBadge.jsx';
+import usePatrol from '../hooks/usePatrol.js';
 
 export default function Patrol() {
   const { patrols, loading, error } = usePatrol();

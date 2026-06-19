@@ -1,8 +1,8 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import DownloadCard from '../components/common/DownloadCard';
-import useDownloads from '../hooks/useDownloads';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import DownloadCard from '../components/common/DownloadCard.jsx';
+import useDownloads from '../hooks/useDownloads.js';
 
 // Map dataset filenames to human-readable categories and descriptions
 function categorize(dataset) {

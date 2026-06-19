@@ -1,11 +1,11 @@
-import KPICard from '../components/common/KPICard';
-import ChartContainer from '../components/common/ChartContainer';
-import StationChart from '../components/charts/StationChart';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import useHealth from '../hooks/useHealth';
-import useSummary from '../hooks/useSummary';
-import useStations from '../hooks/useStations';
+import KPICard from '../components/common/KPICard.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import StationChart from '../components/charts/StationChart.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import useHealth from '../hooks/useHealth.js';
+import useSummary from '../hooks/useSummary.js';
+import useStations from '../hooks/useStations.js';
 import { AlertTriangle, MapPin, Database, CheckCircle2 } from 'lucide-react';
 
 export default function Dashboard() {

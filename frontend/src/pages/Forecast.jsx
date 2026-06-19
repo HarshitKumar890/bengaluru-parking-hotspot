@@ -1,11 +1,11 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import ForecastChart from '../components/charts/ForecastChart';
-import RiskBadge from '../components/common/RiskBadge';
-import StabilityBadge from '../components/common/StabilityBadge';
-import useForecast from '../hooks/useForecast';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import ForecastChart from '../components/charts/ForecastChart.jsx';
+import RiskBadge from '../components/common/RiskBadge.jsx';
+import StabilityBadge from '../components/common/StabilityBadge.jsx';
+import useForecast from '../hooks/useForecast.js';
 
 export default function Forecast() {
   const { forecasts, metadata, loading, error } = useForecast();

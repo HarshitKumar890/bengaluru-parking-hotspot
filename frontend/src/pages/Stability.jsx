@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import StabilityBadge from '../components/common/StabilityBadge';
-import StabilityChart from '../components/charts/StabilityChart';
-import useStability from '../hooks/useStability';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import StabilityBadge from '../components/common/StabilityBadge.jsx';
+import StabilityChart from '../components/charts/StabilityChart.jsx';
+import useStability from '../hooks/useStability.js';
 
 const ALL_FILTERS = ['All', 'Persistent', 'Seasonal', 'Sporadic', 'Volatile', 'Declining', 'Emerging'];
 

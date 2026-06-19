@@ -1,10 +1,10 @@
-import SectionHeader from '../components/common/SectionHeader';
-import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import ErrorState from '../components/common/ErrorState';
-import ChartContainer from '../components/common/ChartContainer';
-import RiskBadge from '../components/common/RiskBadge';
-import RiskDistributionChart from '../components/charts/RiskDistributionChart';
-import useRiskZones from '../hooks/useRiskZones';
+import SectionHeader from '../components/common/SectionHeader.jsx';
+import LoadingSkeleton from '../components/common/LoadingSkeleton.jsx';
+import ErrorState from '../components/common/ErrorState.jsx';
+import ChartContainer from '../components/common/ChartContainer.jsx';
+import RiskBadge from '../components/common/RiskBadge.jsx';
+import RiskDistributionChart from '../components/charts/RiskDistributionChart.jsx';
+import useRiskZones from '../hooks/useRiskZones.js';
 
 const RISK_LEVELS = [
   { level: 'Critical', desc: 'Immediate response required. Persistent high-volume cells with maximum congestion impact.', color: '#ef4444' },
