@@ -32,7 +32,9 @@ COPY backend/ /app/
 COPY outputs/ /app/data/outputs/
 
 # Bake model if present (optional — backend runs without it)
-COPY backend/app/models/ /app/app/models/
+RUN mkdir -p /app/app/models
+
+COPY outputs/lightgbm_model.pkl /app/app/models/lightgbm_model.pkl
 
 ENV BACKEND_ENV=development
 ENV OUTPUT_DIR=/app/data/outputs
