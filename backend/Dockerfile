@@ -36,7 +36,7 @@ COPY backend/app/models/ /app/app/models/
 
 ENV BACKEND_ENV=development
 ENV OUTPUT_DIR=/app/data/outputs
-ENV MODEL_DIR=/app/models
+ENV MODEL_DIR=/app/app/models
 ENV LOG_LEVEL=INFO
 ENV CORS_ORIGINS=http://localhost:3000
 
