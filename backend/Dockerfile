@@ -34,7 +34,7 @@ COPY outputs/ /app/data/outputs/
 # Bake model if present (optional — backend runs without it)
 COPY backend/app/models/ /app/app/models/
 
-ENV BACKEND_ENV=production
+ENV BACKEND_ENV=development
 ENV OUTPUT_DIR=/app/data/outputs
 ENV MODEL_DIR=/app/app/models
 ENV LOG_LEVEL=INFO
